@@ -1,0 +1,49 @@
+/* nav bar styling */
+#navbar-custom{
+    background-color: teal;
+}
+.navbar-brand{
+    font-weight: bolder;
+    
+}
+.dropdown-toggle{
+    color: darkgreen;
+    font-weight: bolder;
+}
+/* top content area landing page */
+
+/* Selecting elements by ID */
+#summary-header{
+    color: teal;
+}
+#main-summary,
+#temp-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#main-summary {
+  width: 70%;
+}
+
+#temp-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+.visheader{
+  width: 1024px;
+  text-align: left;
+  color: teal;
+}
+.summary {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .visuals {
+    width: 1500px;
+    
+  }
