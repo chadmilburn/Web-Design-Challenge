@@ -39,3 +39,7 @@ body {
   margin-left: 50px;
   padding: 50px;
 }
+.header{
+  position: sticky;
+  top: 0 ;
+}
