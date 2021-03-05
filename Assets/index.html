@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparison</title>
+    <title>Latitude vs X</title>
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
@@ -12,12 +12,11 @@
     <!-- style sheet -->
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
-<body>                  
-
+<body>
 <!-- NAV BAR START -->
 <!--https://getbootstrap.com/docs/4.0/components/navbar/  -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="landingpage.html">Latitude vs X</a>
+    <a class="navbar-brand" href="index.html" >Latitude vs X</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,54 +44,69 @@
   </nav>
 <!-- NAV BAR END -->
 <!-- CONTENT FOR LANDING PAGE -->
-<div class="container_comp">
-<div class="row">
-  <div class="col-sm-1 col-md-6">
-    <article>
-      <a target="" href="Cloud.html">
-        <img id="png" src="Visualizations/Cloud.png" 
-        alt="Cloud Map">
-      </a>
-  </article>
-  <article>
-  </div>
-  <div class="col-sm-1 col-md-6">
-    <article>
-    <a target=""" href="Humidity.html">
-      <img id="png" src="Visualizations/Humidity.png" 
-      alt="Humidity Map">
-    </a>
-    </article>
-  </div>  
-</div>
-<br>
-<div class="row">
-    <div class="col-sm-1 col-md-6">
-      <article>
-        <a target="" href="Temp.html">
-          <img id="png" src="Visualizations/Temp.png" 
-          alt="Temperature Map">
-        </a>
-    </article>
-    </div>
-    <div class="col-sm-1 col-md-6">
-      <article>
-        <a target="" href="Wind.html">
-          <img id="png" src="Visualizations/Wind.png" 
-          alt="Wind Speed Map">
-        </a>
-    </article>
-    </div>
-</div>
+ 
 
-</div>
-   
+<div class="container">
+  <br>
+  <div class="row">
+    <!-- left side -->
+    <div class="col col-12 col-md-8 divbdy">
+      <br>
+      <h1 id="summary-header">Summary: Latitude vs. X</h1>
+      <hr>
+      <img id = "main_vis" src="Visualizations/Temp.png" alt="Latitude vs. Temperature"  align="left">
+      <p>
+        The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+        accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on
+        over 500 cities.
+      </p>
+      <p>
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+        souce data and visualizations created as part of the analysis, as well as explanations and descriptions
+        of any trends and correlations witnesseed.
+      </p>
+      <hr>
+    </div>
+    <!-- left side end -->
+    <!-- rigth side -->
+    <div class="col col-12 col-md-4 divbdy">
+      <br>
+      <h2 id="vis-header">Visualizations</h2>
+      <hr>
+      <div class='row'>
+        <div class="col col-3 col-md-6" >
+          <h6 id="thumbnail_title">Latitude vs. Cloudiness</h6>
+          <a a target="_blank" href="Cloud.html">
+            <img id="thumbnail" src="Visualizations/Cloud.png" 
+            alt="Latitude vs. Cloudiness"></a>
+        </div>
+        <div class="col col-3 col-md-6" >
+          <h6 id="thumbnail_title">Latitude vs. Humidity</h6>
+          <a a target="_blank" href="Humidity.html">
+            <img id="thumbnail" src="Visualizations/Humidity.png" 
+            alt="Latitude vs. Humidity"></a>
+        </div>
+        <div class="col col-3 col-md-6" >
+          <h6 id="thumbnail_title">Latitude vs. Temperature</h6>
+          <a a target="_blank" href="Temp.html">
+            <img id="thumbnail" src="Visualizations/Temp.png" 
+            alt="Latitude vs. Temperature "></a>
+        </div>
+        <div class="col col-3 col-md-6" >
+          <h6 id="thumbnail_title">Latitude vs. Wind Speed</h6>
+          <a a target="_blank" href="Wind.html">
+            <img id="thumbnail" src="Visualizations/Wind.png" 
+            alt="Latitude vs. Wind Speed"></a>
+        </div>
+      </div>
+    </div>
+    <!-- end of rigth side --> 
 
 <!-- SCRIPTS FOR BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- SCRIPTS FOR BOOTSTRAP -->
-    
 </body>
 </html>
